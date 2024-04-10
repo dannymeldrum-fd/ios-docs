@@ -1,14 +1,14 @@
 RewriteEngine On
 
-RewriteRule ^(documentation|tutorials)\/.*$ FDFormationSwiftUI/index.html [L]
+RewriteRule ^(documentation|tutorials)\/.*$ ios-docs/FDFormationSwiftUI/index.html [L]
 
 # Xcode 13.0 beta 1 generated DocC archives without a file at data/documentation.json.
 # Replace "modulename" with the name of the name of your product.
-RewriteRule /data/documentation.json FDFormationSwiftUI/data/documentation/fdformationswiftui.json [L]
+RewriteRule /data/documentation.json ios-docs/FDFormationSwiftUI/data/documentation/ios-docs/fdformationswiftui.json [L]
 
-RewriteRule ^(css|js|data|images|downloads|img|videos)\/.*$ FDFormationSwiftUI/$0 [L]
+RewriteRule ^(css|js|data|images|downloads|img|videos)\/.*$ ios-docs/FDFormationSwiftUI/$0 [L]
 
-RewriteRule ^(favicon\.ico|favicon\.svg|theme-settings\.json)$ FDFormationSwiftUI/$0 [L]
+RewriteRule ^(favicon\.ico|favicon\.svg|theme-settings\.json)$ ios-docs/FDFormationSwiftUI/$0 [L]
 
 RewriteRule ^$ /documentation/ [L,R=302]
 RewriteRule ^documentation$ /documentation/ [L,R=302]
