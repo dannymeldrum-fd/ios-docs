@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteRule ^(css|js|data|images|downloads|favicon\.ico|favicon\.svg|img|theme-settings\.json|videos)/.*$ FDFormationTheming/$0 [L]
+RewriteRule /FDFormationTheming/data/documentation.json FDFormationTheming/data/documentation/fdformationtheming.json [L]
+
+
+Redirect /test /success
