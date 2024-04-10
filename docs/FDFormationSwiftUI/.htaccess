@@ -1,2 +1,2 @@
 RewriteEngine On
-RewriteRule ^(css|js|data|images|downloads|favicon\.ico|favicon\.svg|img|theme-settings\.json|videos)/.*$ FDFormationSwiftUI/$0 [L]
+RewriteRule ^(css|js|data|images|downloads|favicon\.ico|favicon\.svg|img|theme-settings\.json|videos)/.*$ ios-docs/FDFormationSwiftUI/$0 [L]
